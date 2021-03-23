@@ -9,9 +9,10 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'angular-fragment';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
-  public buttonClick(fragment: string) {
+  public buttonClick(fragment: string): void {
     this.router.navigateByUrl('#' + fragment);
   }
+
 }
